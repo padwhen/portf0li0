@@ -41,7 +41,7 @@ interface Project {
   learnings: string[];
 }
 
-const projectsPage = () => {
+const ProjectsPage = () => {
   // State to manage dialog
   const [selectedProject, setSelectedProject] = useState<Project | null>(null)
 
@@ -63,7 +63,7 @@ const projectsPage = () => {
         <Heading>My Projects</Heading>
         <FramerWrapper y={0} x={200}>
           <p className=" font-poppins text-lg w-full text-primary max-sm:text-base">
-            I love to Build Cool Projects. Here, you&#x27;ll find a curated
+            I love to Build Cool Projects. Here, you will find a curated
             collection of my creative endeavors and technical projects. Each
             piece represents a journey of innovation, problem-solving, and
             continuous learning. Feel free to explore this showcase of my
@@ -206,7 +206,7 @@ const projectsPage = () => {
                   {/* Learnings Tab */}
                   <TabsContent value="learnings">
                     <div className="prose max-w-none space-y-4">
-                      <h2 className="text-xl font-semibold">Things I've Learned</h2>
+                      <h2 className="text-xl font-semibold">Things I Have Learned</h2>
                       <div className="flex flex-wrap gap-4">
                         {selectedProject.learnings.map((learning, index) => (
                           <div
@@ -246,4 +246,4 @@ const projectsPage = () => {
   );
 };
 
-export default projectsPage;
+export default ProjectsPage;

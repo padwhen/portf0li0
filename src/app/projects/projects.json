@@ -1,0 +1,190 @@
+[
+    {
+      "title": "Franssitsanakirja - Language Learning App",
+      "description": "Franssitsanakirja is an application that translates user queries into flashcards and optimizes learning through a well-designed spaced repetition algorithm.",
+      "overview": "<p><strong>This language learning application</strong> helps users enhance their vocabulary retention by translating and parsing sentences or paragraphs into individual words, which are then saved as flashcards. The app uses a spaced-repetition algorithm to optimize the learning process and improve long-term retention. It features a responsive design, ensuring accessibility and usability across both desktop and mobile devices.</p><ul><li><strong>Flashcards:</strong> Users can create personalized decks and save words to study later.</li><li><strong>Interactive Learning:</strong> Users engage in quizzes to reinforce vocabulary, with customizable sessions based on their preferences.</li><li><strong>Personalized Learning Plans:</strong> Spaced-repetition and progress tracking ensure that users can effectively retain learned words.</li><li><strong>Customization:</strong> Users can modify cards, decks, and profiles to suit their individual learning needs.</li></ul><p>The app also allows users to tailor translations and suggests more accurate translations through AI, as well as import flashcards from their own data. Built with a robust CI/CD pipeline, continuous testing, and hosted on Fly.io, the app offers an efficient and high-quality learning experience. The project is developed using TypeScript, React, and Node.js, and integrates with MongoDB. The codebase is maintained with GitHub Actions for testing and deployment, and it leverages Docker for seamless deployment across environments. The app's development journey involved careful planning, iterative problem-solving, and user-centered design. Future enhancements aim to expand interactive learning options and integrate machine learning features for even more personalized learning paths.</p>",
+      "tags": ["React.JS", "Express.JS", "MongoDB", "Node.JS", "TypeScript", "Python", "OpenAI API", "Github Actions", "Docker"],
+      "link": "https://padwhen-learningapp.fly.dev/",
+      "githubLink": "https://github.com/padwhen/language-learning-app",
+      "inspiration": "When I first started learning Finnish, I struggled to fully comprehend paragraphs even with translation tools. I often couldn't understand why words changed form or what grammatical rules were at play. This challenge inspired me to create this app, designed to make language learning more accessible and efficient. In my language learning journey, I've come to realize that vocabulary is crucial. However, without a structured study plan and clear context, it's difficult to retain words over time. That's why this app provides users with a personalized study plan and contextual learning, making vocabulary acquisition more effective and long-lasting.",
+      "overallDemoVideoUrl": "https://lla-bucket.s3.eu-north-1.amazonaws.com/DemoVideo_Final.mp4",
+      "features": [
+        {
+          "title": "Translating, Speaking, And Add Flashcards To Decks",
+          "description": "This feature uses the OpenAI API to translate and speak words with high accuracy. User queries are converted into flashcards with the original word. If the word comes with different grammatical forms, the base form is saved. Users can add flashcards to existing decks or create new ones if no deck exists.",
+          "videoUrl": "https://lla-bucket.s3.eu-north-1.amazonaws.com/TranslatingAndAddtoDeck.mp4"
+        },
+        {
+            "title": "Flashcard Page",
+            "description": "The Flashcard Page allows users to flip cards, shuffle them, get hints, mark cards as favorites, and edit content easily.",
+            "videoUrl": "https://lla-bucket.s3.eu-north-1.amazonaws.com/Flashcard+Page.mov"
+        },
+        {
+            "title": "Deck Details Page",
+            "description": "The Deck Details Page lets users mark a deck as favorite, modify or delete it, search terms and definitions, export, or delete the entire deck. All deck features, like gamification and learning, are accessible from here.",
+            "videoUrl": "https://lla-bucket.s3.eu-north-1.amazonaws.com/DeckDetailsPage.mov"
+        },
+        {
+            "title": "Matching Game",
+            "description": "A simple matching game where users pair words with their correct meanings or translations.",
+            "videoUrl": "https://lla-bucket.s3.eu-north-1.amazonaws.com/Matching+Page.mov"
+        },
+        {
+            "title": "Test Page",
+            "description": "On the Test Page, users can choose 10 words to test, or the app will automatically select words based on their progress. OpenAI API generates a test consisting of 3 parts: Passage Completion, Synonym Matching, and Word Scrambling. In Passage Completion, users fill blanks in a passage with multiple-choice questions, accompanied by English translations and hints for context. In Synonym Matching, users select the correct translations, and in Word Scrambling, they arrange words in the correct order. At the end, users receive test statistics and a grade.",
+            "videoUrl": "https://lla-bucket.s3.eu-north-1.amazonaws.com/Test+Page.mov"
+        },
+        {
+            "title": "Learning Page",
+            "description": "On the Learning Page, users will focus on 'unlearned' words. They will be presented with 4 options to answer a question. After answering, users will see the learning results, including time and correctness. Based on their performance, the app will create a tailored test. For example, slow answers may require a retest. The Learning Section continues until all cards are learned. If users don't meet the time requirements, their progress is reset, and they must learn again.",
+            "videoUrl": "https://lla-bucket.s3.eu-north-1.amazonaws.com/Learning+Page.mov"
+        },
+        {
+            "title": "Edit Page",
+            "description": "On this page, users can spot duplicate flashcards, not just in the current deck, but across all decks. Users can also edit flashcards here and import multiple flashcards at once for easy management.",
+            "videoUrl": "https://lla-bucket.s3.eu-north-1.amazonaws.com/Edit+Page.mov"
+        },
+        {
+            "title": "Dictionary Page",
+            "description": "The Dictionary Page includes all flashcards from every deck. Users can search for any word and easily access it within its respective deck. It serves as a convenient dictionary for quick lookups.",
+            "videoUrl": "https://lla-bucket.s3.eu-north-1.amazonaws.com/Dictionary+Page.mov"
+        },
+        {
+            "title": "Tailoring Decks",
+            "description": "This feature allows users to tailor their decks by reviewing translations. It scans all vocabularies, identifies incorrect translations, and uses AI to suggest corrections, ensuring more accurate translations for each word.",
+            "videoUrl": "https://github.com/padwhen/language-learning-app/assets/123895854/8b6d2e9e-23f7-40df-b4f4-994a8254b118"
+        }
+      ],
+    "technologies": [
+        {
+            "category": "Programming Languages",
+            "items": ["TypeScript", "JavaScript", "Python"]
+        },
+        {
+            "category": "Front-End",
+            "items": ["React.JS", "Tailwind CSS", "ShadcnUI", "React-router-dom", "OpenAI API"]
+        },
+        {
+            "category": "Back-End",
+            "items": ["Express.JS", "Node.JS"]
+        },
+        {
+            "category": "Database",
+            "items": ["MongoDB"]
+        },
+        {
+            "category": "Cloud Services",
+            "items": ["Amazon Web Services"]
+        },
+        {
+            "category": "Containers & CI/CD",
+            "items": ["Docker", "GitHub Actions"]
+        },
+        {
+            "category": "External Tools",
+            "items": ["Kanban board from GitHub Projects"]
+        }
+    ],
+    "learnings": [
+        "Enhanced understanding of spaced-repetition algorithms",
+        "Implemented responsive design for cross-device accessibility",
+        "Worked with interactive learning features and quizzes",
+        "Developed personalized learning plans with progress tracking",
+        "Integrated AI for translation suggestions and flashcard imports",
+        "Used CI/CD pipelines for continuous testing and deployment",
+        "Deployed applications using Docker and Fly.io",
+        "Worked with MongoDB for backend data storage",
+        "Implemented GitHub Actions for testing and deployment automation",
+        "Improved problem-solving and iterative design in development"
+        ]
+    },
+    {
+      "title": "Social Media Content Generator",
+      "description": "The Social Media Content Generator is a React app that automates content creation and publishing on social media platforms using OpenAI's API, with secure user authentication and backend operations powered by AWS services.",
+    "overview": "<p><strong>The Social Media Content Generator</strong> is a <strong>React-based</strong> application that automates social media content creation using <strong>OpenAI's API</strong>. It seamlessly integrates with social media platforms such as <strong>Facebook</strong>, <strong>Instagram</strong>, and <strong>Twitter</strong>, allowing users to generate, customize, and publish posts directly from the app.</p><p>The app is secured using <strong>AWS Amplify Authentication</strong> with role-based access control provided by <strong>AWS IAM</strong>. Serverless functions, written in <strong>Python</strong>, handle backend operations using <strong>AWS Lambda</strong> and <strong>AWS API Gateway</strong> to perform CRUD operations on an <strong>AWS RDS (MySQL)</strong> database.</p>",
+      "tags": ["React.JS", "AWS Lambda", "TypeScript", "Node.JS", "TypeScript", "Python", "AWS RDS", "AWS IAM"],
+      "link": "https://github.com/padwhen/content-generator",
+      "githubLink": "https://github.com/padwhen/content-generator",
+      "inspiration": "This project was inspired by the desire to apply my knowledge of AWS, explore the potential of social media APIs, and optimize content generation using OpenAI's powerful capabilities, creating an efficient and seamless solution for automating social media posts.",
+      "overallDemoVideoUrl": "https://github.com/user-attachments/assets/d8c36846-4c72-439d-a563-8a72f1d9333c",
+      "features": [
+        {
+          "title": "To be updated",
+          "description": "To be updated"
+        }
+      ],
+    "technologies": [
+        {
+            "category": "Programming Languages",
+            "items": ["TypeScript", "JavaScript", "Python"]
+        },
+        {
+            "category": "Front-End",
+            "items": ["React.JS", "Tailwind CSS", "ShadcnUI", "OpenAI API"]
+        },
+        {
+            "category": "Back-End",
+            "items": ["AWS Lambda (Python)", "AWS API Gateway"]
+        },
+        {
+            "category": "Database",
+            "items": ["AWS RDS (MySQL)"]
+        },
+        {
+            "category": "Cloud Services",
+            "items": ["Amazon Web Services"]
+        },
+        {
+            "category": "Containers & CI/CD",
+            "items": ["Docker", "GitHub Actions"]
+        },
+        {
+            "category": "Authentication",
+            "items": ["AWS Amplify Auth", "AWS IAM"]
+        }
+    ],
+    "learnings": [
+        "Implemented AWS Amplify Authentication with user pools and role-based access control",
+        "Integrated social media APIs (Facebook, Instagram, Twitter) for direct post publishing",
+        "Built serverless functions using AWS Lambda and linked them with API Gateway for CRUD operations",
+        "Worked with AWS RDS and SQL to create and manage database tables",
+        "Gained experience with OpenAI API for content optimization"
+    ]
+    },
+    {
+        "title": "Bidwhen - Bidding App",
+        "description": "Bidwhen is an online auction app where users can bid for items in real time. Receive outbid notifications and quickly place higher bids with a simple, user-friendly interface.",
+      "overview": "<p><strong>Bidwhen</strong> by @padwhen is an intuitive online auction platform that allows users to place bids on items in real time. The app features real-time bidding, where users can track bids and instantly see updates. If you are outbid, you’ll receive a notification so you can place a higher bid, ensuring you don’t miss out on the auction. With a simple and user-friendly interface, the app is easy to navigate for both new and experienced users. The app is built using a range of modern technologies, including <strong>TypeScript</strong>, <strong>Next.js</strong>, <strong>Next Auth</strong>, <strong>PostgreSQL</strong>, <strong>Docker</strong>, <strong>Drizzle ORM</strong>, <strong>AWS S3</strong>, <strong>Knocklabs</strong>, and <strong>TailwindCSS</strong>, making it a robust and scalable solution for online auctions.</p>",
+        "tags": ["Next.JS", "PostgreSQL", "Next Auth", "Docker", "Drizzle ORM", "TypeScript", "AWS S3", "Knocklabs", "TailwindCSS"],
+        "link": "https://github.com/padwhen/bidwhen",
+        "githubLink": "https://github.com/padwhen/bidwhen",
+        "inspiration": "This project was inspired by my need to learn more about PostgreSQL, Next.JS and GraphQL",
+        "overallDemoVideoUrl": "https://github.com/user-/assets/d8c36846-4c72-439d-a563-8a72f1d9333c",
+        "features": [
+          {
+            "title": "To be updated",
+            "description": "To be updated"
+          }
+        ],
+        "technologies": [
+          {
+              "category": "Programming Languages",
+              "items": ["TypeScript", "JavaScript", "Python"]
+          },
+          {
+              "category": "All Technologies",
+              "items": ["Next.JS", "Next Auth", "DrizzleORM", "PostgreSQL", "GraphQL", "AWS S3"]
+          }
+      ],
+        "learnings": [
+    "Implemented authentication using NextAuth for secure user login and session management",
+    "Integrated PostgreSQL database for storing auction data and managing user bids",
+    "Used Drizzle ORM for seamless database interaction and query handling in the app",
+    "Optimized server-side rendering with Next.js for fast and efficient page loads",
+    "Managed and scaled the app using Docker for containerization and deployment",
+    "Implemented notifications to alert users when they are outbid in real time",
+    "Worked with AWS S3 for file storage and managing auction item images",
+    "Enhanced app's responsiveness and UI using TailwindCSS for clean and modern design"
+        ]
+    }
+]
